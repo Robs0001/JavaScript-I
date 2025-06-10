@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador com Botões</title>
+</head>
+<body>
+    <button id="decrementar">-</button>
+    <span id="valorAtual">0</span>
+    <button id="incrementar">+</button>
+
+    <script>
+        let contador = 0;
+        const valorAtual = document.getElementById('valorAtual');
+        
+        document.getElementById('incrementar').onclick = function() {
+            contador++;
+            valorAtual.textContent = contador;
+        };
+        
+        document.getElementById('decrementar').onclick = function() {
+            contador--;
+            valorAtual.textContent = contador;
+        };
+    </script>
+</body>
+</html>

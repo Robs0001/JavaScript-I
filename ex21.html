@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji que Cresce</title>
+    <style>
+        #emoji {
+            font-size: 30px;
+            transition: font-size 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="emoji">😊</div>
+
+    <script>
+        const emoji = document.getElementById('emoji');
+        const tamanhoOriginal = 30;
+
+        emoji.onmouseover = function() {
+            this.style.fontSize = (tamanhoOriginal * 2) + 'px';
+        };
+
+        emoji.onmouseout = function() {
+            this.style.fontSize = tamanhoOriginal + 'px';
+        };
+    </script>
+</body>
+</html>

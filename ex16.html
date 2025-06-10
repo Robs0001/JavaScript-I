@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personagem Favorito</title>
+</head>
+<body>
+    <button id="botao">Mostrar Personagem</button>
+    <div id="imagem-container"></div>
+
+    <script>
+        document.getElementById('botao').addEventListener('click', function() {
+            const container = document.getElementById('imagem-container');
+            container.innerHTML = '<img src="https://th.bing.com/th/id/R.e30cd04a6aa378d0c545104f0f22b56d?rik=eacn1xKQCNIiVw&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f21500000%2fGaara-naruto-21578603-1280-720.png&ehk=4t4ZSseOs2xCyCwBfj9ceKtf10PsbfxvsVi5cqSae04%3d&risl=&pid=ImgRaw&r=0" alt="Personagem favorito">';
+        });
+    </script>
+</body>
+</html>

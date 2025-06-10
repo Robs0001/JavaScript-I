@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Cliques</title>
+</head>
+<body>
+    <h1 id="contador">0</h1>
+    <button id="botao">Clique Aqui</button>
+
+    <script>
+        let contagem = 0;
+        const botao = document.getElementById('botao');
+        const contador = document.getElementById('contador');
+
+        botao.addEventListener('click', function() {
+            contagem++;
+            contador.textContent = contagem;
+        });
+    </script>
+</body>
+</html>

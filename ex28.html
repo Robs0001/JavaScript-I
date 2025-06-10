@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Compras</title>
+    <style>
+        .riscado {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <ul id="listaCompras">
+        <li><input type="checkbox"> Arroz</li>
+        <li><input type="checkbox"> Feijão</li>
+        <li><input type="checkbox"> Macarrão</li>
+        <li><input type="checkbox"> Carne</li>
+        <li><input type="checkbox"> Verduras</li>
+    </ul>
+
+    <script>
+        const checkboxes = document.querySelectorAll('#listaCompras input[type="checkbox"]');
+        
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                const itemLista = this.parentElement;
+                if (this.checked) {
+                    itemLista.classList.add('riscado');
+                } else {
+                    itemLista.classList.remove('riscado');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

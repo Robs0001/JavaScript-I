@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Senha</title>
+</head>
+<body>
+    <input type="password" id="senha" placeholder="Digite sua senha">
+    <button id="botaoValidar">Validar Senha</button>
+    <p id="mensagemValidacao"></p>
+
+    <script>
+        document.getElementById('botaoValidar').onclick = function() {
+            const senha = document.getElementById('senha').value;
+            const mensagem = document.getElementById('mensagemValidacao');
+            
+            if (senha.length >= 6) {
+                mensagem.textContent = "Senha OK!";
+                mensagem.style.color = "green";
+            } else {
+                mensagem.textContent = "Erro: A senha deve ter pelo menos 6 caracteres!";
+                mensagem.style.color = "red";
+            }
+        };
+    </script>
+</body>
+</html>

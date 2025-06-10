@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preenchimento Automático</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <select id="cores">
+        <option value="">Selecione uma cor</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="amarelo">Amarelo</option>
+    </select>
+    <p id="resultado"></p>
+
+    <script>
+        const nomeInput = document.getElementById('nome');
+        const coresSelect = document.getElementById('cores');
+        const resultado = document.getElementById('resultado');
+
+        function atualizarResultado() {
+            const nome = nomeInput.value || 'não informado';
+            const cor = coresSelect.value || 'não selecionada';
+            resultado.textContent = `O nome digitado foi: ${nome} e a cor selecionada foi: ${cor}`;
+        }
+
+        nomeInput.addEventListener('input', atualizarResultado);
+        coresSelect.addEventListener('change', atualizarResultado);
+    </script>
+</body>
+</html>

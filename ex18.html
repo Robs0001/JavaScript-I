@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troca de Estilo</title>
+    <style>
+        #minhaDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            margin: 20px;
+        }
+        .novoEstilo {
+            background-color: pink !important;
+            border: 5px dashed red !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="minhaDiv"></div>
+    <button id="botaoEstilo">Mudar Estilo</button>
+
+    <script>
+        document.getElementById('botaoEstilo').onclick = function() {
+            const div = document.getElementById('minhaDiv');
+            div.classList.toggle('novoEstilo');
+        };
+    </script>
+</body>
+</html>

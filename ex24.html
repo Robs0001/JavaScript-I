@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esconder Elemento</title>
+    <style>
+        #elementoParaEsconder {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="elementoParaEsconder"></div>
+    <button id="botaoEsconder">Esconder Elemento</button>
+
+    <script>
+        document.getElementById('botaoEsconder').onclick = function() {
+            const elemento = document.getElementById('elementoParaEsconder');
+            elemento.style.display = 'none';
+        };
+    </script>
+</body>
+</html>

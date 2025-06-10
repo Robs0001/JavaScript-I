@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensagem Motivacional</title>
+</head>
+<body>
+    <p id="mensagem">Você é capaz de alcançar todos os seus objetivos!</p>
+
+    <script>
+        const paragrafo = document.getElementById('mensagem');
+        const mensagemOriginal = paragrafo.textContent;
+        const mensagemDesmotivacional = "Talvez você não consiga mesmo...";
+
+        paragrafo.addEventListener('mousemove', function() {
+            this.textContent = mensagemDesmotivacional;
+        });
+
+        paragrafo.addEventListener('mouseout', function() {
+            this.textContent = mensagemOriginal;
+        });
+    </script>
+</body>
+</html>

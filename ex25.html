@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar/Esconder Imagem</title>
+</head>
+<body>
+    <img id="minhaImagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToz05nuSyWYZ9P9g6D4oB56dtVrGQc10Hqg&s" alt="Imagem exemplo">
+    <button id="botaoImagem">Esconder/Mostrar</button>
+
+    <script>
+        document.getElementById('botaoImagem').onclick = function() {
+            const imagem = document.getElementById('minhaImagem');
+            if (imagem.style.display === 'none') {
+                imagem.style.display = 'block';
+            } else {
+                imagem.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

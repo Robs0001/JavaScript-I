@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data e Hora Atual</title>
+</head>
+<body>
+    <h1 id="dataHora"></h1>
+    <button id="botaoData">Mostrar Data e Hora</button>
+
+    <script>
+        document.getElementById('botaoData').onclick = function() {
+            const agora = new Date();
+            document.getElementById('dataHora').textContent = agora.toString();
+        };
+    </script>
+</body>
+</html>
